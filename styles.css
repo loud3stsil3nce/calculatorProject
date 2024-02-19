@@ -1,0 +1,153 @@
+
+* {
+    background-color: cornsilk;
+    font-family: 'Times New Roman', Times, serif;
+}
+.header-section {
+    border-style: solid;
+    border-radius: 10px;
+    border-style: groove;
+    margin-bottom: 0;
+    padding: 20px;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.calculator {
+    height:max-content;
+    width: 700px;
+    margin: auto;
+    margin-top: 100px;
+    border-style: solid;
+   
+    padding: 0;
+    
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0.1px;
+
+    grid-template-areas: 
+    "allClear allClear remainder divide"
+    "seven eight nine multiply"
+    "four five six subtract"
+    "one two three add"
+    "zero zero decimal equals";
+}
+
+
+
+.display-screen {
+border-style: solid;
+
+margin: 0;
+display:grid;
+grid-template-rows: 1fr 2fr;
+
+
+}
+
+.operation {
+border-style: solid;
+background-color:antiquewhite;
+text-align: end;
+font-size: 20px;
+min-height: auto;
+padding-right: 20px;
+}
+
+.answer {
+
+border-style: solid;
+border-color: black;
+
+background-color:beige;
+text-align: end;
+font-size: 60px;
+min-height: auto;
+padding-right: 20px;
+
+}
+
+
+
+
+.buttonPad {
+    height:300px;
+    margin: 0;
+    background-color: black;
+    padding-top: 2px;
+}
+
+.buttonPad > button {
+    background-color:darkgrey;
+    margin: 2px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+
+#allClear {
+    grid-area: allClear;
+}
+
+#remainder {
+    grid-area: remainder;
+}
+
+#divide {
+    grid-area: divide;
+}
+
+#seven {
+    grid-area:seven;
+}
+#eight {
+    grid-area:eight;
+}
+#nine {
+    grid-area:nine;
+}
+#multiply {
+    grid-area:multiply
+}
+#four {
+    grid-area:four;
+}
+#five {
+    grid-area:five;
+}
+#six {
+    grid-area:six;
+}
+#subtract {
+    grid-area:subtract;
+}
+#one {
+    grid-area:one;
+}
+#two {
+    grid-area:two;
+}
+#three {
+    grid-area:three;
+}
+#add {
+    grid-area:add;
+}
+#zero {
+    grid-area: zero;
+}
+#decimal {
+    grid-area:decimal;
+}
+#equals {
+    grid-area:equals;
+}
